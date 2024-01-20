@@ -1,0 +1,29 @@
+#button-1050-btnEl {
+    border-right: solid 1px gray !important;
+    margin-right: 2px !important;
+}
+
+#panel-1060-body {
+    border: none !important;
+}
+
+#button-1024-btnIconEl {
+    color: gray !important;
+}
+
+.footer-panel {
+    text-align: center;
+}
+
+.imglogo {
+    width: 8vw;
+    height: 9vh;
+}
+
+.imglogo1 {
+    width: 12vw;
+    height: 14vh;
+}
+
+
+

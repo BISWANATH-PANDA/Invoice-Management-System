@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<package name="invoice" extends="json-default">
+		<action name="allinvoices" class="com.highradius.action.Viewaction"
+			method="allinvoices">
+			<!-- <interceptor-ref name="json">
+				<param name="enableSMD">true</param>
+			</interceptor-ref> -->
+			<result name="Shown" type="json">
+				<param name="invoices"></param>
+			</result>
+			<result name="ERROR" type="json">
+				<param name="error">errorMsg</param>
+			</result>
+		</action>
+		<action name="openinvoices" class="com.highradius.action.Viewaction"
+			method="openinvoices">
+			<!-- <interceptor-ref name="json">
+				<param name="enableSMD">true</param>
+			</interceptor-ref> -->
+			<result name="Shown" type="json">
+				<param name="invoices"></param>
+			</result>
+			<result name="ERROR" type="json">
+				<param name="error">errorMsg</param>
+			</result>
+		</action>
+		<action name="closedinvoices" class="com.highradius.action.Viewaction"
+			method="closedinvoices">
+			<!-- <interceptor-ref name="json">
+				<param name="enableSMD">true</param>
+			</interceptor-ref> -->
+			<result name="Shown" type="json">
+				<param name="invoices"></param>
+			</result>
+			<result name="ERROR" type="json">
+				<param name="error">errorMsg</param>
+			</result>
+		</action>
+		<action name="deletedinvoices" class="com.highradius.action.Viewaction"
+			method="deletedinvoices">
+			<!-- <interceptor-ref name="json">
+				<param name="enableSMD">true</param>
+			</interceptor-ref> -->
+			<result name="Shown" type="json">
+				<param name="invoices"></param>
+			</result>
+			<result name="ERROR" type="json">
+				<param name="error">errorMsg</param>
+			</result>
+		</action>
+		<action name="addinvoice" class="com.highradius.action.Action"
+			method="addinvoiceof">
+			<interceptor-ref name="json">
+				<param name="enableSMD">true</param>
+			</interceptor-ref>
+			<result name="Shown" type="json">
+				<param name="a"></param>
+			</result>
+			<result name="ERROR" type="json">
+				<param name="error">errorMsg</param>
+			</result>
+		</action>
+		<action name="deleteinvoices" class="com.highradius.action.Action"
+			method="deleteinvoices">
+			<interceptor-ref name="json">
+				<param name="enableSMD">true</param>
+			</interceptor-ref>
+			<result name="Shown" type="json">
+				<param name="slno"></param>
+			</result>
+			<result name="ERROR" type="json">
+				<param name="error">errorMsg</param>
+			</result>
+		</action>
+		<action name="editinvoice" class="com.highradius.action.Action"
+			method="editinvoice">
+			<interceptor-ref name="json">
+				<param name="enableSMD">true</param>
+			</interceptor-ref>
+			<result name="Shown" type="json">
+				<param name="a"></param>
+			</result>
+			<result name="ERROR" type="json">
+				<param name="error">errorMsg</param>
+			</result>
+		</action>
+		
+		<action name="advancesearch" class="com.highradius.action.Action"
+			method="advancesearch">
+			<interceptor-ref name="json">
+				<param name="enableSMD">true</param>
+			</interceptor-ref>
+			<result name="Shown" type="json">
+				<param name="a"></param>
+			</result>
+			<result name="ERROR" type="json">
+				<param name="error">errorMsg</param>
+			</result>
+		</action>
+	</package>
+</struts>
